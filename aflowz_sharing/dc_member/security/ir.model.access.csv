@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dc_member,dc_member_user_access,model_dc_member,base.group_user,1,1,1,1
+access_dc_stockiest,dc_stockiest_user_access,model_dc_stockiest,base.group_user,1,1,1,1

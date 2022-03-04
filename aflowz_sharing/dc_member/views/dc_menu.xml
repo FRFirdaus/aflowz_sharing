@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="dc_main_menu" name="Dewi Coryati" action="dc_member_action"/>
+    
+    <menuitem id="dc_kantor_menu" name="DC Kantor" parent="dc_main_menu"/>
+    <menuitem id="dc_member_menu" name="Tim Tangguh" action="dc_member_action" parent="dc_kantor_menu" sequence="1"/>
+    <menuitem id="dc_stockiest_menu" name="Stockiest Barang" action="dc_stockiest_action" parent="dc_kantor_menu" sequence="2"/>
+</odoo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dc_stockiest_tree_view" model="ir.ui.view">
+        <field name="name">dc_stockiest_tree_view</field>
+        <field name="model">dc.stockiest</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="jenis_barang"/>
+                <field name="tipe"/>
+                <field name="jumlah"/>
+                <field name="kadaluarsa"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="dc_stockiest_form_view" model="ir.ui.view">
+        <field name="name">dc_stockiest_form_view</field>
+        <field name="model">dc.stockiest</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="jenis_barang"/>
+                            <field name="tipe"/>
+                        </group>
+                        <group>
+                            <field name="jumlah"/>
+                            <field name="kadaluarsa"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="dc_stockiest_action" model="ir.actions.act_window">
+        <field name="name">DC Stockiest</field>
+        <field name="res_model">dc.stockiest</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- <menuitem 
+        id="dc_stockiest_menu"
+        name="Stockiest Barang" 
+        action="dc_stockiest_action"
+    /> -->
+</odoo>
